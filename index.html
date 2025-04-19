@@ -3,110 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conecta+ | Carregando...</title>
-    <style>
-        :root {
-            --color-primary: #647D6F;
-            --color-secondary: #95A5A0;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #ffffff;
-            font-family: Arial, sans-serif;
-        }
-
-        .splash-container {
-            text-align: center;
-            animation: fadeIn 0.5s ease-in;
-        }
-
-        .logo {
-            width: 200px;
-            height: auto;
-            margin-bottom: 2rem;
-            animation: pulse 2s infinite;
-        }
-
-        .loading-text {
-            color: var(--color-primary);
-            font-size: 1.2rem;
-            margin-top: 1rem;
-            opacity: 0.8;
-        }
-
-        .loading-bar {
-            width: 200px;
-            height: 4px;
-            background-color: #eee;
-            border-radius: 2px;
-            margin: 1rem auto;
-            overflow: hidden;
-        }
-
-        .loading-progress {
-            width: 100%;
-            height: 100%;
-            background-color: var(--color-primary);
-            animation: loading 2s infinite;
-            transform-origin: left;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        @keyframes loading {
-            0% {
-                transform: scaleX(0);
-            }
-            50% {
-                transform: scaleX(1);
-            }
-            100% {
-                transform: scaleX(0);
-            }
-        }
-    </style>
+    <title>Conecta - Conectando Talentos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="splash-container">
-        <img src="logo-removebg-preview.png" alt="Conecta+" class="logo">
-        <div class="loading-bar">
-            <div class="loading-progress"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Conecta+</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#como-funciona">Como Funciona</a></li>
+                <li><a href="#para-profissionais">Para Profissionais</a></li>
+                <li><a href="#para-clientes">Para Clientes</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <a href="login.html" class="login-btn">Entrar</a>
         </div>
-        <p class="loading-text">Carregando...</p>
-    </div>
+    </nav>
 
-    <script>
-        // Simula um tempo de carregamento e redireciona para a página principal
-        setTimeout(() => {
-            window.location.href = 'login.html';
-        }, 3000); // Redireciona após 3 segundos
-    </script>
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Conectando Talentos com Oportunidades</h1>
+                <p>Encontre consultoria especializada de recém-formados ou ofereça seus serviços profissionais</p>
+                <div class="cta-buttons">
+                    <a href="client.html" class="btn primary">Sou Cliente</a>
+                    <a href="professional.html" class="btn secondary">Sou Profissional</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="como-funciona" class="features">
+        <div class="container">
+            <h2>Como Funciona</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>Para Profissionais</h3>
+                    <p>Cadastre-se como recém-formado e comece a oferecer suas consultorias</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Para Clientes</h3>
+                    <p>Encontre profissionais qualificados para suas necessidades</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Consultorias Online</h3>
+                    <p>Atendimento flexível através de videoconferência</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Consultorias Presenciais</h3>
+                    <p>Encontre profissionais próximos a você</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="para-profissionais" class="professionals">
+        <div class="container">
+            <div class="content-grid">
+                <div class="text-content">
+                    <h2>Para Profissionais</h2>
+                    <p>Inicie sua carreira oferecendo consultorias e ganhe experiência prática na sua área</p>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check"></i> Construa seu portfólio profissional</li>
+                        <li><i class="fas fa-check"></i> Defina seus horários</li>
+                        <li><i class="fas fa-check"></i> Escolha entre atendimento online ou presencial</li>
+                        <li><i class="fas fa-check"></i> Receba feedback dos clientes</li>
+                    </ul>
+                    <a href="professional.html" class="btn primary">Cadastre-se como Profissional</a>
+                </div>
+                <div class="image-content">
+                    <!-- Placeholder para imagem -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="para-clientes" class="clients">
+        <div class="container">
+            <div class="content-grid reverse">
+                <div class="image-content">
+                    <!-- Placeholder para imagem -->
+                </div>
+                <div class="text-content">
+                    <h2>Para Clientes</h2>
+                    <p>Encontre profissionais qualificados para suas necessidades com preços acessíveis</p>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check"></i> Acesso a profissionais recém-formados</li>
+                        <li><i class="fas fa-check"></i> Preços competitivos</li>
+                        <li><i class="fas fa-check"></i> Flexibilidade de horários</li>
+                        <li><i class="fas fa-check"></i> Atendimento personalizado</li>
+                    </ul>
+                    <a href="client.html" class="btn primary">Buscar Profissionais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Conecta+</h3>
+                    <p>Conectando talentos e oportunidades</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="#para-profissionais">Para Profissionais</a></li>
+                        <li><a href="#para-clientes">Para Clientes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contato@conecta.com</li>
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Conecta+. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html> 
