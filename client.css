@@ -1,0 +1,239 @@
+.client-main {
+    padding: 8rem 0 4rem;
+    min-height: calc(100vh - 200px);
+}
+
+.post-problem {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-problem h1 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.subtitle {
+    color: var(--color-text);
+    margin-bottom: 2rem;
+}
+
+.problem-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(100, 125, 111, 0.1);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+.skill-tag {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-tag i {
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.skill-tag i:hover {
+    opacity: 0.8;
+}
+
+#skill-input {
+    border: none;
+    padding: 0.3rem;
+    flex: 1;
+    min-width: 150px;
+}
+
+#skill-input:focus {
+    outline: none;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tips-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-secondary);
+}
+
+.tips-section h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.tips-section ul {
+    list-style: none;
+}
+
+.tips-section li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.tips-section i {
+    color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .post-problem {
+        margin: 0 1rem;
+    }
+}
+
+/* Modal de Sucesso */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+
+.modal-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.modal-header h2 {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.modal-body {
+    text-align: center;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.modal-footer .btn {
+    min-width: 120px;
+}
+
+/* Animação de fade para o modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+} 

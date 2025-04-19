@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta+ | Divulgar Oportunidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="client.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Conecta+</a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index.html#como-funciona">Como Funciona</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="login-btn">Minha Conta</button>
+        </div>
+    </nav>
+
+    <main class="client-main">
+        <div class="container">
+            <div class="post-problem">
+                <h1>Divulgue sua Necessidade</h1>
+                <p class="subtitle">Preencha o formulário abaixo para encontrar o profissional ideal</p>
+
+                <form class="problem-form">
+                    <div class="form-group">
+                        <label for="title">Título da Oportunidade</label>
+                        <input type="text" id="title" required placeholder="Ex: Preciso de consultoria em Marketing Digital">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="area">Área de Atuação</label>
+                            <select id="area" required>
+                                <option value="">Selecione uma área</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="direito">Direito</option>
+                                <option value="tecnologia">Tecnologia</option>
+                                <option value="administracao">Administração</option>
+                                <option value="contabilidade">Contabilidade</option>
+                                <option value="psicologia">Psicologia</option>
+                                <option value="engenharia">Engenharia</option>
+                                <option value="design">Design</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="type">Tipo de Atendimento</label>
+                            <select id="type" required>
+                                <option value="">Selecione o tipo</option>
+                                <option value="presencial">Presencial</option>
+                                <option value="online">Online</option>
+                                <option value="hibrido">Híbrido</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="budget">Orçamento (R$)</label>
+                            <input type="number" id="budget" required placeholder="Valor em reais">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="deadline">Prazo Estimado</label>
+                            <input type="date" id="deadline" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Descrição Detalhada</label>
+                        <textarea id="description" rows="6" required placeholder="Descreva sua necessidade, requisitos e expectativas..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Habilidades Necessárias</label>
+                        <div class="skills-container">
+                            <div class="skill-tag">Excel <i class="fas fa-times"></i></div>
+                            <div class="skill-tag">PowerPoint <i class="fas fa-times"></i></div>
+                            <input type="text" id="skill-input" placeholder="Digite uma habilidade e pressione Enter">
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Publicar Oportunidade</button>
+                        <button type="button" class="btn secondary">Salvar Rascunho</button>
+                    </div>
+                </form>
+
+                <div class="tips-section">
+                    <h3>Dicas para uma boa publicação</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Seja específico sobre suas necessidades</li>
+                        <li><i class="fas fa-check"></i> Detalhe os requisitos técnicos</li>
+                        <li><i class="fas fa-check"></i> Estabeleça prazos realistas</li>
+                        <li><i class="fas fa-check"></i> Defina um orçamento adequado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Conecta+</h3>
+                    <p>Conectando talentos e oportunidades</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contato@conecta.com</li>
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Conecta+. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Sucesso -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle success-icon"></i>
+                <h2>Oportunidade Publicada!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Sua oportunidade foi publicada com sucesso! Em breve os profissionais interessados entrarão em contato.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn primary" onclick="closeModal()">Entendi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html> 

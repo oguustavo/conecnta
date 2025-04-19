@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta+ | Oportunidades</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="professional.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Conecta+</a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index.html#como-funciona">Como Funciona</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="login-btn">Minha Conta</button>
+        </div>
+    </nav>
+
+    <main class="professional-main">
+        <div class="container">
+            <div class="opportunities-header">
+                <h1>Oportunidades Disponíveis</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar oportunidades...">
+                    <button class="btn primary"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <!-- Filtros -->
+                <aside class="filters-sidebar">
+                    <div class="filter-section">
+                        <h3>Filtros</h3>
+                        
+                        <div class="filter-group">
+                            <h4>Área de Atuação</h4>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="marketing"> Marketing
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="direito"> Direito
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="tecnologia"> Tecnologia
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="administracao"> Administração
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="contabilidade"> Contabilidade
+                            </label>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Tipo de Atendimento</h4>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="presencial"> Presencial
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="online"> Online
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="hibrido"> Híbrido
+                            </label>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Faixa de Orçamento</h4>
+                            <div class="range-inputs">
+                                <input type="number" placeholder="Mín" class="range-input">
+                                <span>até</span>
+                                <input type="number" placeholder="Máx" class="range-input">
+                            </div>
+                        </div>
+
+                        <button class="btn primary full-width">Aplicar Filtros</button>
+                    </div>
+                </aside>
+
+                <!-- Lista de Oportunidades -->
+                <div class="opportunities-list">
+                    <!-- Exemplo de Cards de Oportunidades -->
+                    <div class="opportunity-card">
+                        <div class="card-header">
+                            <h3>Consultoria em Marketing Digital</h3>
+                            <span class="budget">R$ 2.000</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag area">Marketing</span>
+                            <span class="tag type">Online</span>
+                            <span class="tag urgent">Urgente</span>
+                        </div>
+                        <p class="description">Preciso de ajuda para desenvolver uma estratégia de marketing digital para minha empresa de pequeno porte, incluindo gestão de redes sociais e campanhas.</p>
+                        <div class="skills-needed">
+                            <span class="skill">Social Media</span>
+                            <span class="skill">Google Ads</span>
+                            <span class="skill">Facebook Ads</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="deadline"><i class="far fa-clock"></i> 30 dias</span>
+                            <button class="btn primary">Candidatar-se</button>
+                        </div>
+                    </div>
+
+                    <div class="opportunity-card" data-page="1">
+                        <div class="card-header">
+                            <h3>Assessoria Jurídica para Startup</h3>
+                            <span class="budget">R$ 3.500</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag area">Direito</span>
+                            <span class="tag type">Presencial</span>
+                        </div>
+                        <p class="description">Busco profissional recém-formado em direito para auxiliar na estruturação jurídica de uma startup de tecnologia.</p>
+                        <div class="skills-needed">
+                            <span class="skill">Direito Empresarial</span>
+                            <span class="skill">Contratos</span>
+                            <span class="skill">Propriedade Intelectual</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="deadline"><i class="far fa-clock"></i> 45 dias</span>
+                            <button class="btn primary">Candidatar-se</button>
+                        </div>
+                    </div>
+
+                    <div class="opportunity-card" data-page="1">
+                        <div class="card-header">
+                            <h3>Desenvolvimento de Site Institucional</h3>
+                            <span class="budget">R$ 4.000</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag area">Tecnologia</span>
+                            <span class="tag type">Híbrido</span>
+                        </div>
+                        <p class="description">Preciso de um desenvolvedor web para criar um site institucional responsivo e moderno para uma clínica médica.</p>
+                        <div class="skills-needed">
+                            <span class="skill">HTML</span>
+                            <span class="skill">CSS</span>
+                            <span class="skill">JavaScript</span>
+                            <span class="skill">WordPress</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="deadline"><i class="far fa-clock"></i> 60 dias</span>
+                            <button class="btn primary">Candidatar-se</button>
+                        </div>
+                    </div>
+
+                    <!-- Página 2 -->
+                    <div class="opportunity-card" data-page="2" style="display: none;">
+                        <div class="card-header">
+                            <h3>Análise Financeira para E-commerce</h3>
+                            <span class="budget">R$ 2.800</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag area">Contabilidade</span>
+                            <span class="tag type">Online</span>
+                        </div>
+                        <p class="description">Necessito de um profissional para realizar análise financeira completa e propor melhorias para um e-commerce em crescimento.</p>
+                        <div class="skills-needed">
+                            <span class="skill">Excel Avançado</span>
+                            <span class="skill">Power BI</span>
+                            <span class="skill">Análise de Dados</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="deadline"><i class="far fa-clock"></i> 20 dias</span>
+                            <button class="btn primary">Candidatar-se</button>
+                        </div>
+                    </div>
+
+                    <div class="opportunity-card" data-page="2" style="display: none;">
+                        <div class="card-header">
+                            <h3>Design de Interface para App</h3>
+                            <span class="budget">R$ 3.200</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag area">Design</span>
+                            <span class="tag type">Remoto</span>
+                            <span class="tag urgent">Urgente</span>
+                        </div>
+                        <p class="description">Procuro designer UI/UX para criar interfaces modernas e intuitivas para um aplicativo de delivery.</p>
+                        <div class="skills-needed">
+                            <span class="skill">Figma</span>
+                            <span class="skill">Adobe XD</span>
+                            <span class="skill">Prototipagem</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="deadline"><i class="far fa-clock"></i> 15 dias</span>
+                            <button class="btn primary">Candidatar-se</button>
+                        </div>
+                    </div>
+
+                    <!-- Página 3 -->
+                    <div class="opportunity-card" data-page="3" style="display: none;">
+                        <div class="card-header">
+                            <h3>Consultoria em Recursos Humanos</h3>
+                            <span class="budget">R$ 2.500</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag area">RH</span>
+                            <span class="tag type">Híbrido</span>
+                        </div>
+                        <p class="description">Empresa busca profissional para desenvolver políticas de RH e plano de cargos e salários.</p>
+                        <div class="skills-needed">
+                            <span class="skill">Gestão de Pessoas</span>
+                            <span class="skill">Recrutamento</span>
+                            <span class="skill">Desenvolvimento</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="deadline"><i class="far fa-clock"></i> 40 dias</span>
+                            <button class="btn primary">Candidatar-se</button>
+                        </div>
+                    </div>
+
+                    <div class="opportunity-card" data-page="3" style="display: none;">
+                        <div class="card-header">
+                            <h3>Planejamento Estratégico</h3>
+                            <span class="budget">R$ 4.500</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag area">Administração</span>
+                            <span class="tag type">Presencial</span>
+                        </div>
+                        <p class="description">Consultoria para desenvolvimento de planejamento estratégico para empresa de médio porte do setor industrial.</p>
+                        <div class="skills-needed">
+                            <span class="skill">Gestão Estratégica</span>
+                            <span class="skill">KPIs</span>
+                            <span class="skill">BSC</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="deadline"><i class="far fa-clock"></i> 90 dias</span>
+                            <button class="btn primary">Candidatar-se</button>
+                        </div>
+                    </div>
+
+                    <!-- Paginação -->
+                    <div class="pagination">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Conecta+</h3>
+                    <p>Conectando talentos e oportunidades</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contato@conecta.com</li>
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Conecta+. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Sucesso -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle success-icon"></i>
+                <h2>Candidatura Enviada!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Sua candidatura foi enviada com sucesso! O cliente será notificado e entrará em contato em breve.</p>
+                <div class="next-steps">
+                    <h3>Próximos passos:</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> Você receberá um e-mail de confirmação</li>
+                        <li><i class="fas fa-bell"></i> Acompanhe as notificações no seu perfil</li>
+                        <li><i class="fas fa-comments"></i> Prepare-se para a entrevista inicial</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn secondary" onclick="closeModal()">Continuar Procurando</button>
+                <a href="#" class="btn primary">Ver Minhas Candidaturas</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Candidatura -->
+    <div class="modal" id="applyModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Candidatar-se à Vaga</h2>
+                <button class="close-btn" onclick="closeApplyModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="applicationForm" class="application-form">
+                    <div class="form-group">
+                        <label for="coverLetter">Carta de Apresentação</label>
+                        <textarea id="coverLetter" rows="6" required 
+                            placeholder="Descreva por que você seria o profissional ideal para esta oportunidade. Destaque suas experiências relevantes e como pode agregar valor ao projeto."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Disponibilidade</label>
+                        <div class="availability-options">
+                            <label class="radio-label">
+                                <input type="radio" name="availability" value="immediate" required>
+                                Imediata
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="availability" value="15days">
+                                15 dias
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="availability" value="30days">
+                                30 dias
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="expectedValue">Valor Pretendido (R$)</label>
+                        <input type="number" id="expectedValue" required min="0" step="100">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn secondary" onclick="closeApplyModal()">Cancelar</button>
+                        <button type="submit" class="btn primary">Enviar Candidatura</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="professional.js"></script>
+</body>
+</html> 
